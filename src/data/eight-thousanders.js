@@ -1,4 +1,4 @@
-const mountains = [
+const eightThousanders = [
   {
     name: "Mount Everest",
     height: 8848,
@@ -85,4 +85,4 @@ const mountains = [
   }
 ]
 
-export default mountains;
+export default eightThousanders;
