@@ -1,21 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
+// import { useSelector, useDispatch } from 'react-redux';
+// import eightThousanders from '../data/eight-thousanders';
+// import EightThousander from './eight_thousander';
+// TODO import actions from '../features/eightThousanders/eightThousandersSlice';
 
-import eightThousanders from '../data/eight-thousanders';
-
-import EightThousander from './eight_thousander';
-
-export default class EightThousanderList extends Component {
-  renderList = () => {
+export default function EightThousanderList() {
+  const renderList = () => {
     // return (
     //   <EightThousander />
     // );
   }
 
-  render() {
-    return (
-      <div className="8th-list">
-        {this.renderList()}
-      </div>
-    );
-  }
+  return (
+    <div className="8K-list">
+      {renderList()}
+    </div>
+  );
 }
