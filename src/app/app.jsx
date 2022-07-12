@@ -1,7 +1,7 @@
 import React from 'react';
 
-import EightThousanderList from '../containers/eight_thousander_list';
-import ActiveEightThousander from '../containers/active_eight_thousander';
+import EightThousanderList from '../components/eight_thousander_list';
+import ActiveEightThousander from '../components/active_eight_thousander';
 
 const App = () => {
   return (
