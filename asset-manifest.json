@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/redux-eight-thousanders/static/css/main.ebc2e6d1.css",
+    "main.js": "/redux-eight-thousanders/static/js/main.6234f67a.js",
+    "index.html": "/redux-eight-thousanders/index.html",
+    "main.ebc2e6d1.css.map": "/redux-eight-thousanders/static/css/main.ebc2e6d1.css.map",
+    "main.6234f67a.js.map": "/redux-eight-thousanders/static/js/main.6234f67a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebc2e6d1.css",
+    "static/js/main.6234f67a.js"
+  ]
+}
