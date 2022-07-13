@@ -9,19 +9,21 @@ export default function EightThousanderList() {
     return eightThousanders.map((mountain) => {
       return (
         <EightThousander
-          key={mountain.height}
+          key={mountain.name}
           name={mountain.name}
-          height={mountain.height}
-          country={mountain.country}
-          imageUrl={mountain.imageUrl}
         />
       );
     });
   }
 
   return (
-    <div className="8K-list">
-      {renderList()}
+    <div>
+      <div>
+        Click on a specific mountain to see more details:
+      </div>
+      <div className="8K-list">
+        {renderList()}
+      </div>
     </div>
   );
 }
