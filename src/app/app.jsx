@@ -5,7 +5,7 @@ import ActiveEightThousander from '../components/active_eight_thousander';
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <EightThousanderList />
       <ActiveEightThousander />
     </div>

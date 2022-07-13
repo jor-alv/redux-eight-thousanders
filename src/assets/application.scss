@@ -1,16 +1,60 @@
 body {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.72em;
-  color: black;
-  background-color: white;
+  font-size: 1.4em;
+  font-weight:300;
+  color: #eaedf3;
+  background-color: #0D1117;
 }
 
-.material-icons {
+.app {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  .eight-K-container {
+    width: 38.2%;
+  }
+  .eight-K-intro {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+  }
+  .eight-K-instructions {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+  }
+  .eight-K-list {
+    margin-left: 28px;
+  }
+  .active-eight-K {
+    width: 61.8%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.eight-K-list-element {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  list-style-type: none;
+  li {
+    text-indent: -1.4em;
+  }
+  li:before {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
-  display: inline-block;
+  display: block;
   line-height: 1;
   text-transform: none;
   letter-spacing: normal;
@@ -21,4 +65,8 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  content: "e564";
+  float: left;
+  width: 1.4em;
+  }
 }

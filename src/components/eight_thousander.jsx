@@ -5,8 +5,8 @@ import React from 'react';
 
 export default function EightThousander(props) {
   return (
-    <div className="8K">
-      <span className="material-icons-round">terrain</span> {props.name}
-    </div>
+    <li className="eight-K-list-element">
+      <p><span className="material-icons-round">terrain</span> {props.mountain.name}</p>
+    </li>
   );
 }

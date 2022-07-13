@@ -10,19 +10,22 @@ export default function EightThousanderList() {
       return (
         <EightThousander
           key={mountain.name}
-          name={mountain.name}
+          mountain={mountain}
         />
       );
     });
   }
 
   return (
-    <div>
+    <div className="eight-K-container">
       <div>
-        Click on a specific mountain to see more details:
+        <div className="eight-K-intro">Eight-thousanders are the 14 mountains that are more than 8,000 metres (26,247 ft) in height above sea level.</div>
+        <div className="eight-K-instructions">Click on a specific eight-thousander to see more details about it:</div>
       </div>
-      <div className="8K-list">
-        {renderList()}
+      <div>
+        <ul className="eight-K-list icon">
+          {renderList()}
+        </ul>
       </div>
     </div>
   );
