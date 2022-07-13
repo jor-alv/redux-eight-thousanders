@@ -1,8 +1,6 @@
 import React from 'react';
-// import { useSelector, useDispatch } from 'react-redux';
 import eightThousanders from '../data/eight-thousanders';
 import EightThousander from './eight_thousander.jsx';
-// TODO import actions from '../features/eightThousanders/eightThousandersSlice';
 
 export default function EightThousanderList() {
   const renderList = () => {
@@ -19,8 +17,8 @@ export default function EightThousanderList() {
   return (
     <div className="eight-K-container">
       <div>
-        <div className="eight-K-intro">Eight-thousanders are the 14 mountains that are more than 8,000 metres (26,247 ft) in height above sea level.</div>
-        <div className="eight-K-instructions">Click on a specific eight-thousander to see more details about it:</div>
+        <div className="eight-K-intro"><span className="title">Eight-thousanders</span> are the 14 mountains that are more than 8,000 metres (26,247 ft) in height above sea level.</div>
+        <div className="eight-K-instructions">* Click on a specific eight-thousander to see more details about it:</div>
       </div>
       <div>
         <ul className="eight-K-list icon">

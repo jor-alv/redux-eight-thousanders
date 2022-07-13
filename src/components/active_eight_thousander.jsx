@@ -1,11 +1,10 @@
 import React from 'react';
-import {} from 'react-redux';
-// import eightThousanders from '../data/eight-thousanders';
-// import EightThousander from './eight_thousander';
-// TODO import actions from '../features/activeEightThousander/activeEightThousanderSlice';
+import { useSelector } from 'react-redux';
 
-export default function ActiveEightThousander(props) {
-  if (!props.activeEightThousander) {
+export default function ActiveEightThousander() {
+  const selectedEightThousander = useSelector((state) => state.selectedEightThousander);
+
+  if (!selectedEightThousander.name) {
     return (
       <div className="active-eight-K">
         <p>Select an eight-thousander...</p>
@@ -15,10 +14,12 @@ export default function ActiveEightThousander(props) {
 
   return (
     <div className="active-eight-K">
-      <h3>{props.activeEightThousander.name}</h3>
-      <p>Height = {props.activeEightThousander.height}</p>
-      <p>Country = {props.activeEightThousander.country}</p>
-      <img src={props.activeEightThousander.imageUrl} alt={props.activeEightThousander.name} width="100%" />
+      <h3>{selectedEightThousander.name}</h3>
+      <div className="active-eight-K-details">
+        <p>Height: {selectedEightThousander.height} metres</p>
+        <p>Country: {selectedEightThousander.country}</p>
+      </div>
+      <img src={selectedEightThousander.imageUrl} alt={selectedEightThousander.name} width="100%" />
     </div>
   );
 }

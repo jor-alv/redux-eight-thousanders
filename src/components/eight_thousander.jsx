@@ -1,11 +1,16 @@
 import React from 'react';
-// import { useSelector, useDispatch } from 'react-redux';
-// import eightThousanders from '../data/eight-thousanders';
-// TODO import actions from '../features/eightThousanders/eightThousandersSlice';
+import { useDispatch } from 'react-redux';
+import { selectEightThousander } from '../features/eightThousanders/eightThousandersSlice';
 
 export default function EightThousander(props) {
+  const dispatch = useDispatch();
+
+  const select = () => {
+    dispatch(selectEightThousander(props.mountain))
+  }
+
   return (
-    <li className="eight-K-list-element">
+    <li className="eight-K-list-element" onClick={select}>
       <p><span className="material-icons-round">terrain</span> {props.mountain.name}</p>
     </li>
   );

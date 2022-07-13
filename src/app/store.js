@@ -1,10 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import eightThousandersReducer from '../features/eightThousanders/eightThousandersSlice';
-import activeEightThousanderReducer from '../features/activeEightThousander/activeEightThousanderSlice';
+import selectedEightThousanderReducer from '../features/eightThousanders/eightThousandersSlice';
 
 export const store = configureStore({
   reducer: {
-    eightThousanders: eightThousandersReducer,
-    activeEightThousander: activeEightThousanderReducer
+    selectedEightThousander: selectedEightThousanderReducer
   }
 })

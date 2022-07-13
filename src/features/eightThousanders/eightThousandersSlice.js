@@ -1,16 +1,19 @@
 import { createSlice } from '@reduxjs/toolkit';
-import eightThousanders from '../../data/eight-thousanders';
 
 const initialState = {
-  eightThousanders: eightThousanders,
+  selectedEightThousander: {}
 };
 
 export const eightThousandersSlice = createSlice({
   name: 'eightThousanders',
   initialState,
-  reducers: {}
+  reducers: {
+    selectEightThousander: (state, action) => {
+      return action.payload
+    }
+  }
 })
 
-export const {} = eightThousandersSlice.actions;
+export const { selectEightThousander } = eightThousandersSlice.actions;
 
 export default eightThousandersSlice.reducer;
