@@ -16,7 +16,7 @@ export default function ActiveEightThousander() {
     <div className="active-eight-K">
       <h3>{selectedEightThousander.name}</h3>
       <div className="active-eight-K-details">
-        <p>Height: {selectedEightThousander.height} metres</p>
+        <p>Height: {selectedEightThousander.height}</p>
         <p>Country: {selectedEightThousander.country}</p>
       </div>
       <img src={selectedEightThousander.imageUrl} alt={selectedEightThousander.name} width="100%" />
