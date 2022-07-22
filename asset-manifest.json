@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/redux-eight-thousanders/static/css/main.ebc2e6d1.css",
-    "main.js": "/redux-eight-thousanders/static/js/main.bbe90a88.js",
+    "main.js": "/redux-eight-thousanders/static/js/main.b10582cc.js",
     "index.html": "/redux-eight-thousanders/index.html",
     "main.ebc2e6d1.css.map": "/redux-eight-thousanders/static/css/main.ebc2e6d1.css.map",
-    "main.bbe90a88.js.map": "/redux-eight-thousanders/static/js/main.bbe90a88.js.map"
+    "main.b10582cc.js.map": "/redux-eight-thousanders/static/js/main.b10582cc.js.map"
   },
   "entrypoints": [
     "static/css/main.ebc2e6d1.css",
-    "static/js/main.bbe90a88.js"
+    "static/js/main.b10582cc.js"
   ]
 }
