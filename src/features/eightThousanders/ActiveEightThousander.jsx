@@ -1,17 +1,15 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-export default function ActiveEightThousander() {
-  const selectedEightThousander = useSelector((state) => state.selectedEightThousander);
-
-  if (!selectedEightThousander.name) {
+export function ActiveEightThousander() {
+  const { selectedEightThousander } = useSelector(state => state.eightThousanders);
+  if (!selectedEightThousander) {
     return (
       <div className="active-eight-K">
         <p>Select an eight-thousander...</p>
       </div>
     );
   }
-
   return (
     <div className="active-eight-K">
       <h3>{selectedEightThousander.name}</h3>

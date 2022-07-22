@@ -1,10 +1,11 @@
 import React from 'react';
-import eightThousanders from '../data/eight-thousanders';
-import EightThousander from './eight_thousander.jsx';
+import { useSelector } from 'react-redux';
+import { EightThousander } from './EightThousander.jsx';
 
-export default function EightThousanderList() {
+export function EightThousanderList() {
+  const { allEightThousanders } = useSelector(state => state.eightThousanders);
   const renderList = () => {
-    return eightThousanders.map((mountain) => {
+    return allEightThousanders.map((mountain) => {
       return (
         <EightThousander
           key={mountain.name}
@@ -13,7 +14,6 @@ export default function EightThousanderList() {
       );
     });
   }
-
   return (
     <div className="eight-K-container">
       <div>
